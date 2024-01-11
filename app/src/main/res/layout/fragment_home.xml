@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="2dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/selection" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/chtrih"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/listtt2"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:id="@+id/pizzascroll2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:clipToOutline="true"
+                        android:scaleType="center"
+                        android:background="@drawable/wer"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:textColor="@color/red"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/title_home1"></TextView>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:clipToOutline="true"
+                        android:scaleType="center"
+                        android:background="@drawable/snoudow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/title_home2"></TextView>
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:clipToOutline="true"
+                        android:scaleType="center"
+                        android:background="@drawable/snoudow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/title_home3"></TextView>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:clipToOutline="true"
+                        android:scaleType="center"
+                        android:background="@drawable/snoudow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/title_home3"></TextView>
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:clipToOutline="true"
+                        android:scaleType="center"
+                        android:background="@drawable/snoudow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/title_home4"></TextView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <HorizontalScrollView
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lenta_pokyp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="300dp"
+                                android:layout_height="180dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="10dp">
+
+                                    <ImageView
+                                        android:background="@drawable/round_outline"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="centerCrop"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/q"></ImageView>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="300dp"
+                                android:layout_height="180dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="10dp">
+
+                                    <ImageView
+                                        android:background="@drawable/round_outline"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="centerCrop"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/q"></ImageView>
+                                </androidx.cardview.widget.CardView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/round_outline"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="300dp"
+                                android:layout_height="180dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="5dp"
+                                    android:elevation="10dp">
+
+                                    <ImageView
+                                        android:background="@drawable/round_outline"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="centerCrop"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/q"></ImageView>
+                                </androidx.cardview.widget.CardView>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listtt"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <HorizontalScrollView
+                        android:id="@+id/pizzascroll1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/wer"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp">
+
+                                <TextView
+                                    android:textColor="@color/red"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/title_home1"></TextView>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/snoudow"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp">
+
+                                <TextView
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/title_home2"></TextView>
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/snoudow"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp">
+
+                                <TextView
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/title_home3"></TextView>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/snoudow"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp">
+
+                                <TextView
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/title_home3"></TextView>
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:clipToOutline="true"
+                                android:scaleType="center"
+                                android:background="@drawable/snoudow"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp">
+
+                                <TextView
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/title_home4"></TextView>
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_list"
+                        android:layout_marginBottom="300dp"
+                        android:background="@color/ser"
+                        android:clipToPadding="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/single_item1"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"></LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/zagruz"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/zagr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"></ImageView>
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

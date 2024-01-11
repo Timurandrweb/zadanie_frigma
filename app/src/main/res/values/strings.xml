@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">zadanie_frigma</string>
+    <string name="title_home">Меню</string>
+    <string name="title_dashboard">Профиль</string>
+    <string name="title_notifications">Корзина</string>
+
+
+    <string name="title_home1"><b>Пицца</b></string>
+    <string name="title_home2">Комбо</string>
+    <string name="title_home3">Десерты</string>
+    <string name="title_home4">Напитки</string>
+
+
+</resources>
