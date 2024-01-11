@@ -17,8 +17,7 @@ https://avtoanalitica.ru/
  
 • КОРУТИНЫ
 • Rxjava2
-• Room (занятие миграции  и баз данных sql)
-• Dagger 2 (учу)
+• Room
 • Picasso 
 • Jsoup
 • Json
